@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "Bugmail Revived",
+  "description": "WebExtension implementation of the original add-on by Fabrice Desré and Colin Guthrie",
+  "version": "1.0.0",
+  "author": "The Betterbird Project, Jörg Knobloch",
+  "homepage_url": "https://github.com/Betterbird/bugmail-revived/",
+  "applications": {
+    "gecko": {
+      "id": "BugmailRevived@betterbird.eu",
+      "strict_min_version": "128.0a1"
+    }
+  },
+  "message_display_action": {
+    "default_title": "Bugmail",
+    "default_icon" : "Buggie.svg",
+    "default_label": "",
+    "default_popup": "bugmail.html"
+  },
+  "permissions": [
+    "messagesRead",
+    "https://bugzilla.mozilla.org/*"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "icons": {
+    "16": "Buggie.svg",
+    "32": "Buggie.svg",
+    "64": "Buggie.svg"
+  }
+}
